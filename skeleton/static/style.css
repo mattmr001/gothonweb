@@ -1,0 +1,58 @@
+html { font-family: InputSansCondensed; color: black; background: #ebf4eb; padding: 1rem; }
+
+img, embed, object, video {
+    max-width: 100%;
+}
+
+@font-face {
+    src: url('fonts/InputSansCondensed-Black-Edu.eot'); /* IE < 9 */
+    src: url('fonts/InputSansCondensed-Black-Edu.eot?#') format("embedded-opentype"), /* IE 9 */
+         url('fonts/InputSansCondensed-Black-Edu.woff2') format("woff2"),
+         url('fonts/InputSansCondensed-Black-Edu.woff') format("woff");
+    font-family: 'InputSansCondensed';
+    font-style: normal;
+    font-weight: 800;
+    }
+
+
+body{
+    flex-direction: column;
+}
+
+.container{
+    max:wi
+}
+
+.hero{
+
+}
+
+
+.hero-body{
+    display: flex;
+
+    justify-content: center;
+
+    background-color: #eee;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
+    margin-top: 30px;
+}
+
+.navbar-menu{
+    display:flex;
+    /*display: block;*/
+    flex:1;
+    justify-content: flex-end;
+    color:black;
+    background-color: white;
+
+}
+
+.navbar-item{
+    margin: 5px;
+}
+
+.navbarMenuHeroA{
+
+}
+

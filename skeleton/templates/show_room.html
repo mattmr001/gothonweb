@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="box box_header">
+    <h1 id="header"> {{ room.name }} </h1>
+</div>
+<div class="flex_container">
+    <div class="box box_description">
+        <p id="description">
+            {{ room.description }}
+        </p>
+    </div>
+
+    {% if room.name in ["death","The End"] %}
+    <div class="box box_image">
+        <img id="image" src="/static/images/snake_in_frog.jpg" alt="snake_in_mouth" widht="200" height="200"/>
+    </div>
+
+    <div class="box play_again">
+        <p id="play_again"><a href="/">Play Again?</a></p>
+    </div>
+
+    {% else %}
+    <div class="box box_form">
+        <form action="/game" method="POST">
+        <input id="input_text" type="text" name="action" placeholder="enter keyword">
+            <input id="input_button" type="SUBMIT" value="Submit">
+        </form>
+    </div>
+</div>
+
+
+
+{% endif %}
+
+{% endblock %}
